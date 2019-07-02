@@ -1,11 +1,11 @@
 [package]
-name = "fizz-buzz"
+name = "{{project-name}}"
 version = "0.1.0"
-authors = ["Anton Patrushev <apatrushev@gmail.com>"]
+authors = ["{{authors}}"]
 edition = "2018"
 
 [lib]
-name = "fizz_buzz"
+name = "{{crate_name}}"
 crate-type = ["cdylib"]
 
 [dependencies]

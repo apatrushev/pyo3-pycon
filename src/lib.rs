@@ -19,7 +19,7 @@ fn sum_as_str(a: usize, b: usize) -> MyClass {
 }
 
 #[pymodule]
-fn fizz_buzz(_: Python, m: &PyModule) -> PyResult<()> {
+fn {{crate_name}}(_: Python, m: &PyModule) -> PyResult<()> {
     m.add_wrapped(wrap_pyfunction!(sum_as_str))?;
     Ok(())
 }
